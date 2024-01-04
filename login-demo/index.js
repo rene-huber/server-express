@@ -53,12 +53,15 @@ app.get("/error" , (req, res) => {
 
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
-  if (email === 'admin@example.com' && password === '111') {
+  if (email === 'user@email.com' && password === 'very-secret') {
+    res.json({ success: true });
     res.redirect('/my-account');
   } else {
     res.redirect('/error');
+    res.json({ success: false });
   }
 });
+
 
 
 
