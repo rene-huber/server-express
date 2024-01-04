@@ -1,0 +1,33 @@
+# Dependencias
+node_modules/
+
+# Archivos de registro
+npm-debug.log
+yarn-error.log
+
+# Directorio de salida de compilación
+/dist
+
+# Directorio .env para variables de entorno
+.env
+
+# Archivos de configuración del editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema de archivos OS
+.DS_Store
+Thumbs.db
+
+# Directorios de perfil de Node
+node_prof/
+v8.log
+
+# Archivos de paquetes
+package-lock.json
+yarn.lock
+
+# Directorios de cobertura
+coverage/

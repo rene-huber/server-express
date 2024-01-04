@@ -1,4 +1,5 @@
 import express from "express";
+import bodyParser from "body-parser";
 import cors from 'cors';
 import helmet from 'helmet';
 import path from "path";
@@ -11,6 +12,7 @@ app.use(cors());
 app.use(helmet());
 app.use(express.json());
 app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const staff = ["Sally", "Bob", "Mike", "Rachel", "Andy", "Greg"];
 
