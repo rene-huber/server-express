@@ -6,5 +6,5 @@ document.querySelector('form').onsubmit = async (e) => {
         method: 'POST',
         body: formData
     });
-   
+   return response
 };
